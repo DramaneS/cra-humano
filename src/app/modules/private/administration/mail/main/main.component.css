@@ -1,0 +1,66 @@
+/* th{
+    font-size: 1.5rem;
+} */
+
+td{
+    font-size: 1.1rem;
+    color: #07322C;
+}
+table{
+    background-image: url('../../../../../../assets/images/service-bg.jpg');
+}
+
+.bg{
+    background-color: #07322C;
+    color: white;
+    font-family: Noto Serif ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+
+    /* font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem; */
+}
+
+@media (max-width : 700px){
+
+
+body{
+    margin-top: 100px;
+}
+
+    .table thead {
+        display: none;
+    }
+
+    .table tr {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .table td {
+        display: block;
+        text-align: left;
+    } 
+
+    .table td:before{
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+}
+
+.container{
+    margin-bottom:3%;
+    margin-top: 9%;
+}
+
+.mod{
+    color: white;
+    font-family: Noto Serif ;
+    font-size: 1.2rem;
+    font-family: normal;
+    font-style: normal;
+}

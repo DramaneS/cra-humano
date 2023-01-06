@@ -1,0 +1,32 @@
+<!-- <div class="position-relative">
+
+  <div   *ngIf=" loaded == true && filter['dataSource'] != undefined "
+
+          class="  "
+    >
+
+      <select class="form-select  py-2 pe-3 ps-1 my-1 me-1 "
+              name="{{filter.name}}"
+              aria-label=""
+              [(ngModel)]="filter.value"
+               >
+
+       <option value=""  [(ngModel)]="filter.value">&nbsp;</option>
+       <option
+                *ngFor=" let option of filter.dataSource ; let i = index  "
+                value="{{option[optionId]}}"
+
+                [selected]=" filter.value === option[optionId]"
+                >
+         {{option[optionName]}}
+       </option>
+     </select>
+
+  </div>
+  <div   *ngIf=" loaded == false " class="text-left" >
+    <div class="spinner-border spinner-border-xl" role="status"     >
+          <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+</div> -->

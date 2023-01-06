@@ -1,0 +1,20 @@
+h3,h1 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #006E69;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+/* 
+@media screen and ( min-width: 574px ) {
+    .text{
+        margin-top: 100px;
+    }
+} */

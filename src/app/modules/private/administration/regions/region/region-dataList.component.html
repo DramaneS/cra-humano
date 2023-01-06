@@ -1,0 +1,232 @@
+
+  <div style="margin-top: 12%;">
+
+  
+<awkaa-dataList [config]="dataListData">
+  <ng-template #templateCard>
+    <div class="car w-60 mx-auto my-4 shadow bg-body border-top rounded   h-auto "
+      *ngFor=" let item of dataListData['data'] ; let i = index  " style="max-width:700px;">
+      <ng-container *ngIf=" item['media'] != undefined  && item['media'].length == 1  "
+        [ngTemplateOutlet]="cardMediaContainerSingle" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+      <ng-container *ngIf=" item['media'] != undefined  && item['media'].length == 2  "
+        [ngTemplateOutlet]="cardMediaContainerDouble" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+      <ng-container *ngIf=" item['media'] != undefined  && item['media'].length == 3  "
+        [ngTemplateOutlet]="cardMediaContainerThird" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+      <ng-container *ngIf=" item['media'] != undefined  && item['media'].length == 4  "
+        [ngTemplateOutlet]="cardMediaContainerQuadruple" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+      <ng-container *ngIf=" item['media'] != undefined  && item['media'].length > 4  "
+        [ngTemplateOutlet]="cardMediaContainerQuadrupleMore" [ngTemplateOutletContext]="{ $implicit: item }">
+      </ng-container>
+
+      <div class="row p-2" >
+        <div class="col">
+          <h5 class="card-titl">{{ item['first_name'] }}</h5>
+          <p class="card-tex">...</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #templateList >
+    <div class="car   my-4 border-bottom border-bottom-light p-0   h-auto "
+      *ngFor=" let item of dataListData['data'] ; let i = index  " style="max-width:auto;">
+      <div class=" row  p-0 pb-1">
+        <div class="col-md-5  ">
+          <div [id]="'carouselExampleDark' + i " class="carousel carousel-dark slide" data-bs-ride="carousel"
+            style="height:350px;">
+            <div class="carousel-indicators">
+              <!-- <button type="button" *ngFor=" let option  of [].constructor(4)  ; let ii = index  "
+                [att.data-bs-target]="'#carouselExampleDark'+i" data-bs-slide-to="0"
+                class="{{ (ii == 0 ) ? 'active' : '' }}" aria-current="true" aria-label="Slide 1"></button> -->
+                <button type="button" *ngFor="let option of [].constructor(4); let ii = index"
+                [attr.data-bs-target]="'#carouselExampleDark'+i"
+                data-bs-slide-to="0" class="{{(ii == 0) ? 'active' : ''}}" aria-current="true" aria-label="Slide 1"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" *ngFor=" let option  of [].constructor(4)  ; let ii = index  "
+                data-bs-interval="10000">
+                <img src="{{_environment.app.defaultCard}}" class="d-block w-100" style="height:350px;width:330px;"
+                  alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5> </h5>
+                  <p> </p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleDark'+i"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleDark'+i"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class=" row ">
+            <div class="col-md">
+              {{ item['first_name'] }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template #templateGrid>
+    <div class=" awkaa-data-list-grid-item shadow border-top border-top-light bg-body rounded "
+      *ngFor=" let item of dataListData['data'] ; let i = index  ">
+      <div [id]="'carouselExampleDark' + i " class="p-1 carousel carousel-dark slide" data-bs-ride="carousel"
+        style="height:350px;">
+        <div class="carousel-indicators">
+          <button type="button" *ngFor=" let option  of [].constructor(4)  ; let ii = index  "
+          [attr.data-bs-target]="'#carouselExampleDark'+i" data-bs-slide-to="0"
+            class="{{ (ii == 0 ) ? 'active' : '' }}" aria-current="true" aria-label="Slide 1"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" *ngFor=" let option  of [].constructor(4)  ; let ii = index  "
+            data-bs-interval="10000">
+            <img src="{{_environment.app.defaultCard}}" class="d-block w-100" style="height:350px;width:330px;"
+              alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5> </h5>
+              <p> </p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" [attr.data-bs-target]="'#carouselExampleDark'+i"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" [attr.data-bs-target]="'#carouselExampleDark'+i"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+      <div>
+        <div class=" row ">
+          <div class="col-md">
+            {{ item['first_name'] }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</awkaa-dataList>
+
+
+<ng-template #cardMediaContainerSingle let-data>
+  <div class="row w-100  m-0 rounded-top rounded-left rounded-right position-relative"
+    style="height:350px;padding-top:4px;padding-left:4px;padding-right:4px;">
+    <div class="col  p-0">
+      <img src="{{_environment.app.defaultCard}}" class=" " style=" object-fit: fit ; width:100%; height:350px;"
+        alt="..." />
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #cardMediaContainerDouble let-data>
+  <div class="row w-100  m-0 rounded-top rounded-left rounded-right position-relative"
+    style="height:350px;padding-top:4px;padding-left:4px;padding-right:4px;">
+    <div class="col      p-0">
+      <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0  "
+        style="  width:100%; height:350px;object-fit: fit ; " alt="...">
+    </div>
+    <div class="col ps-1  pe-0 pb-0 py-0   ">
+      <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 "
+        style="   width:100%; height:350px; object-fit: fit ; " alt="...">
+    </div>
+  </div>
+</ng-template>
+
+
+<ng-template #cardMediaContainerThird let-data>
+  <div class="row w-100  m-0 rounded-top rounded-left rounded-right position-relative"
+    style="height:350px;padding-top:4px;padding-left:4px;padding-right:4px;">
+    <div class="col      p-0">
+      <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0  "
+        style="  width:100%; height:350px;object-fit: fit ; " alt="...">
+    </div>
+    <div class="col ps-1  pe-0 pb-0 py-0   ">
+      <div class="">
+        <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 "
+          style="   width:100%; height:175px; object-fit: fit ; " alt="...">
+      </div>
+      <div class="py-1 pb-1 ">
+        <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 "
+          style="   width:100%; height:170px; object-fit: fit ; " alt="...">
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+
+<ng-template #cardMediaContainerQuadruple let-data>
+  <div class="row w-100  m-0 rounded-top rounded-left rounded-right position-relative"
+    style="height:350px;padding-top:4px;padding-left:4px;padding-right:4px;">
+    <div class="col      p-0">
+      <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0  "
+        style="  width:100%; height:350px;object-fit: fit ; " alt="...">
+    </div>
+    <div class="col ps-1  pe-0 pb-0 py-0   ">
+      <div class="">
+        <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 "
+          style="   width:100%; height:175px; object-fit: fit ; " alt="...">
+      </div>
+      <div class="py-1 pb-1 ">
+        <div class="row p-0 m-0 ">
+          <div class=" col p-0  ">
+            <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 m-0 "
+              style="   width:100%; height:170px; object-fit: fit ; " alt="...">
+          </div>
+          <div class=" col p-0  ps-1 ">
+            <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 m-0 "
+              style="   width:100%; height:170px; object-fit: fit ; " alt="...">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #cardMediaContainerQuadrupleMore let-data>
+  <div class="row w-100  m-0 rounded-top rounded-left rounded-right position-relative"
+    style="height:350px;padding-top:4px;padding-left:4px;padding-right:4px;">
+    <div class="col      p-0">
+      <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0  "
+        style="  width:100%; height:350px;object-fit: fit ; " alt="..." />
+    </div>
+    <div class="col ps-1  pe-0 pb-0 py-0   ">
+      <div class="">
+        <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 "
+          style="   width:100%; height:175px; object-fit: fit ; " alt="..." />
+      </div>
+      <div class="py-1 pb-1 ">
+        <div class="row p-0 m-0 ">
+          <div class=" col p-0  ">
+            <img src="{{_environment.app.defaultCard}}" class="  pe-0 pb-0 py-0 m-0 "
+              style="   width:100%; height:170px; object-fit: fit ; " alt="..." />
+          </div>
+          <div class=" col p-0  ps-1 position-relative ">
+            <div
+              class=" position-absolute  position-relative  text-white align-middle fs-2  pe-0 pb-0 py-0 m-0  text-center  "
+              style="width:98%; height:170px; background-image:url('{{ _environment.app.backgroundBlackOpacity }}');">
+              <div class="my-5 d-block">+3</div>
+            </div>
+            <img src="http://vps135727.vps.ovh.ca:9889/images/examen/1664560501.jpg" class="  pe-0 pb-0 py-0 m-0 "
+              style="   width:100%; height:170px; object-fit: fit ; " alt="..." />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template>
+</div>

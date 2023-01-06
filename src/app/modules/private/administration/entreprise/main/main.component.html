@@ -1,0 +1,94 @@
+<body>
+    <div  style="margin-top: 7%;">
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-5">
+                    <button type="button" class="btn btn-success btn-lg" (click)="add()">
+                        Ajouter nouvelle entreprise
+                        <i class="bi bi-plus-lg"></i>
+                    </button>               
+                </div>
+                <div class="col-sm-5">
+                    <input class=" btn-lg"
+                    placeholder="Recherche"
+                    >
+                </div>
+                <div class="col-sm-2">
+                    <input class=" btn-lg" disabled
+                    value="Total: 2"
+                    >
+                </div>
+            </div>
+        </div>
+        <table class="table table-hover align-middle mb-0">
+
+            <thead class="bg">
+                <tr>
+                    <th>Code</th>
+                    <th>Nom de l'entreprise</th>
+                    <th>Division</th>
+                    <th>Region & Regions d'affaire</th>
+                    <th>Telephone & Code postal</th>
+                    <th>Adresse & Site</th>
+
+                    <th style="text-align: center;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> 001 </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> BBS </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> Info </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> Bamako </p>
+                                <p class="fw-bold mb-1"> Kayes, Koulikoro, Segou </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> 83878125 </p>
+                                <p class="fw-bold mb-1"> BP E21 </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> Daoudabougou </p>
+                                <p class="fw-bold mb-1"> www.dramane.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <button type="button" class="btn btn-warning btn-sm mod">
+                            Modifier
+                            <i class="bi bi-pencil-square"></i>                   
+                        </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-danger btn-sm mod">
+                            Supprimer
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                    </td>
+                </tr>

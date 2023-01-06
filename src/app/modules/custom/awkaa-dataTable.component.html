@@ -1,0 +1,103 @@
+<!--<div class="mat-elevation-z8"> -->
+
+
+<div class="mx-auto container-fluid p-0">
+
+  <!-- <div class="awkaa-display-header d-none  d-md-block d-lg-block  d-xl-block   d-xxl-block  {{config['headerClass'] ?  config['headerClass'] : '' }}  " *ngIf="config['displayHeader'] == true ">
+    <ng-container [ngTemplateOutlet]="templateHeader"  ></ng-container>
+  </div>
+
+  <div class="awkaa-display-content position-relative py-1 pb-3   {{config['bodyClass'] ?  config['bodyClass'] : '' }}  " style="min-height:100px;">
+      <div class=" mx-auto my-auto  position-absolute " role="status"   [style.display]="   loading  == true ? '' : 'none'"  style="left:50%;top:50%;margin-top:-40px;">
+
+          <ng-container [ngTemplateOutlet]="templateLoadingSpinner"  ></ng-container>
+
+
+      </div>
+      <div class="">
+        <ng-container [ngTemplateOutlet]="templateBody"  >
+        </ng-container>
+      </div>
+  </div> -->
+
+
+  <div class="awkaa-display-footer  py-1 pb-1  align-items-center {{config['footerClass'] ?  config['footerClass'] : '' }}  "   *ngIf="config['displayFooter'] == true ">
+
+    <nav  class=" row py- d-flex  align-items-center ">
+
+        <div  class=" col-lg me-auto d-flex  ">
+              <button type="button" class="btn btn-ligth " *ngIf="config['displayPaginatorRecapHeader'] == true" >
+
+                  <span *ngIf=" config['dataItemTotal']  > 0 ">
+                    {{config['dataItemFirstRank']}} à {{config['dataItemLastRank']}} / {{config['dataItemTotal']}} Élément{{ ( config['dataItemTotal'] > 1 ) ? 's': ''}}
+                  </span>
+                  <span *ngIf=" config['dataItemTotal']  == 0 ">
+                    Pas d'élément trouvé
+                  </span>
+
+              </button>
+        </div>
+
+        <div  class=" col-lg ms-auto d-flex   ">
+
+          <button type="button" class="btn btn-ligth  ms-ml-auto ms-xl-auto ms-xxl-auto"
+          *ngIf=" config['displayPaginatorPageSizeChooser'] == true" >
+          Éléments par page :
+          </button>
+
+
+          <div class="dropdown   d-flex"
+            *ngIf=" config['displayPaginatorPageSizeChooser'] == true"
+            >
+             <button class="btn dropdown-toggle border border-ligth text-body py-0 m-1 " style="height:33px;" type="button" data-bs-toggle="dropdown" aria-expanded="false"  title="Tri" >
+               <span class=" p-0 ps-1" > {{ ( config['paginatorPageSize'] != undefined ) ? config['paginatorPageSize'] : "" }} </span>
+             </button>
+             <ul class="dropdown-menu border border-body text-body" >
+               <li *ngFor=" let option of config['paginatorPageSizeChoices'] ; let i = index  "   style="cursor:pointer !important;">
+                 <a class="dropdown-item  text-body"  (click)="setStatePaginatorPageSizeFromClient(option)"  style="cursor:pointer !important;">{{option}} éléments par page</a>
+               </li>
+             </ul>
+          </div>
+
+          <span class="ms-3"
+          *ngIf=" config['displayPaginatorPageChooser'] == true"
+
+            >
+              &nbsp;
+          </span>
+          <ul class="pagination  d-flex my-auto  pe-2  "
+          *ngIf=" config['displayPaginatorPageChooser'] == true"
+
+          >
+            <li class="page-item cursor-pointer"  style="cursor:pointer !important;">
+              <a class="page-link cursor-pointer" (click)="paginatePrevious()" style="cursor:pointer !important;">
+                <i  class="bi bi-chevron-left  text-body "></i>
+              </a>
+            </li>
+            <li class="page-item cursor-pointer"  >
+
+
+            <!-- <select class="  ps-1 pe-1 border  text-body h-100 "  (change)="setStatePaginatorPageFromClient()" [(ngModel)]="config['paginatorPage']" >
+              <option *ngFor=" let option  of [].constructor(config['dataItemPageTotal'])  ; let i = index  "   style="cursor:pointer !important;" [value]="i+1"  [selected]=" config['paginatorPage'] === i+1">
+                <a class="  text-body"   style="cursor:pointer !important;">Page {{i+1}} / {{ config['dataItemPageTotal'] }} </a>
+              </option>
+            </select> -->
+
+
+            </li>
+
+            <li class="page-item cursor-pointer" style="cursor:pointer !important;">
+              <a class="page-link cursor-pointer" (click)="paginateNext()"  style="cursor:pointer !important;">
+                <i  class="bi bi-chevron-right text-body "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+</div>
+
+<!--
+</div>
+-->

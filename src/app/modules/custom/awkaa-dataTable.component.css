@@ -1,0 +1,14 @@
+/* ::ng-deep {
+
+
+  .awkaa-display-header .btn-check:checked + .btn,
+  .awkaa-display-header :not(.btn-check) + .btn:active,
+  .awkaa-display-header .btn:first-child:active,
+  .awkaa-display-header .btn.active,
+  .awkaa-display-header .btn.show {
+
+    border-color:#CCC;
+
+}
+
+} */

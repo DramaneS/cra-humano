@@ -1,0 +1,155 @@
+#media-solution {
+    background-image: url('../../../../../assets/images/media-solution.jpg');
+    background-size: cover;
+    height: 400px !important;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.solution-service {
+    min-height: 562px !important;
+}
+.solution-service-image {
+    height: 100%;
+    width: 100%;
+}
+.solution-arrow {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px; 
+ }
+.content {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 60px;
+}
+
+
+.app {
+    text-shadow: 0px 4px #ccc;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.1rem;
+    color: #07322C !important;
+    margin-top: -15px;
+}
+.humano-text-typo-h3{
+  font-family: Noto Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+  margin-top: 10px;
+  margin-top:20px;
+
+}
+
+.ser{
+    color: white;
+    min-height:300px;
+    margin-top:50px;
+    padding-top: 5px;
+    padding-right: 30px;
+    padding-left: 20px;
+}
+
+.solution{
+    background-image:url('../../../../../assets/images/media-solution-1.jpg');
+    background-size:cover;
+    height:226px;
+}
+
+
+.im{
+    height: 300px;
+    object-fit: cov;
+    background-image: url('../../../../../assets/images/lines-humano-public-solution.svg');
+    background-size: cover;
+    background-repeat: none;
+}
+
+.humano-btn-rect
+      {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 4px;
+        display: inline-block;
+        padding:2px !important;
+        padding-left:4px !important;
+        padding-right:4px !important;
+        color: white;
+        border-radius: 3px;
+        cursor:pointer;       
+        display: inline-block !important;
+        border-radius: 5px;
+        text-decoration: none;
+        max-width: 361px;
+        margin-top:10px;
+    }
+
+.aide{
+    margin-top: 150px;
+    text-decoration: none;
+}
+
+
+.humano-text-typo-h2 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: white; 
+    text-align: center;
+    display: flex;
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 30%;
+    padding-bottom: 30%;
+
+}
+
+.humano-text-typoint {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: white; 
+    height: 500px;
+}
+
+.humano-text-typoser {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: white; 
+    text-align: center;
+    margin-top:4%;
+    text-decoration:underline;
+
+}
+
+    .humano-text-typo-h4 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #006E69;
+} 
+
+.notif{
+    max-width: 257px;
+    margin-top:60px;
+    margin-right:10px;
+    border-color:#006E69;
+    border: 2px solid; 
+    color: #006E69;
+}
+.integ{
+    background-image:url('../../../../../assets/images/media-solution-3.jpg');
+    background-size : cover;
+}
+
+.solut{
+    background-image: url('../../../../../assets/images/media-solution-2.jpg');
+    height: 480px;
+    background-size: cover;
+}

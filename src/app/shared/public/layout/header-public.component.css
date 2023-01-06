@@ -1,0 +1,93 @@
+.navbar
+{
+  height: 95px  !important;
+}
+
+
+
+@media screen and (min-width: 993px) {
+    .hide-lg-min{
+      display:none   !important;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .hide-lg-max{
+      display:none   !important;
+    }
+}
+
+
+.nav-item.sub   .navbar-nav.sub
+{
+  display: none !important;
+  position: absolute !important;
+}
+
+
+.nav-item.sub:hover   .navbar-nav.sub
+{
+  display: block !important;
+  position: absolute !important;
+}
+
+.fav{
+  background-image: url('../../../../assets/images/member-ship-favoris.svg');
+  background-size: cover;
+}
+
+.user{
+  background-image: url('../../../../assets/images/default_user.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+.pro{
+  background-image: url('../../../../assets/images/member-ship-profile.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.pla{
+  background-image: url('../../../../assets/images/member-ship-plateforme.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.favo{
+  background-image: url('../../../../assets/images/member-ship-favoris.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.deconnect{
+  background-image: url('../../../../assets/images/member-ship-logout.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.logo{
+  background-image: url('../../../../assets/images/logo-humano-1-white.png');
+  background-size: 48%;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 400px;
+  margin-right: -150px;
+}
+
+.logos{
+  background-image: url('../../../../assets/images/logo-humano-insigne.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  /* margin-right: -150px; */
+}
+
+.useRepon{
+  background-image: url('../../../../assets/images/default_user.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+

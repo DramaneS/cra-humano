@@ -1,0 +1,87 @@
+#media-publier-un-projet {
+    background-image : url('../../../../../assets/images/media-publier-un-projet.jpg');
+    height: 400px !important;
+    background-size: cover;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.app {
+    text-shadow: 0px 4px #ccc;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.1rem;
+    color: #07322C !important;
+    }
+.humano-text-typo-h3 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #006E69;
+    margin-top:10px;
+    margin-top: 30px;
+}
+.content {
+    padding: 30px;
+}
+.humano-text-typo-h4 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.humano-text-typo{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.humano-text-typo-h2
+  {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.6rem;
+    color: white;
+  }
+.contact{
+    min-height:470px;
+    margin-top:30px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom: 30px;
+}
+.humano-btn-rect {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 4px;
+    display: inline-block;
+    padding: 2px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+    display: inline-block !important;
+    max-width: 231px;
+    min-width: 180px;
+    color: white !important;
+    background-color: #006E69;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+.imgs{
+padding: 10%;
+}
+
+#pub{
+    background-image: url('../../../../../assets/images/publier-un-projet-illustration.jpg');
+    background-size: cover;
+    height: 450px;
+}

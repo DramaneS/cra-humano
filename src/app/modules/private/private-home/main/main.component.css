@@ -1,0 +1,29 @@
+
+
+h3 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #006E69;
+    font-size: 1.6rem;
+
+}
+
+.imgAdmin{
+    height: 300px;
+    width: 100%;
+    border-radius: 100%;
+    background-size: cover;
+}
+
+.soumission{
+    background-image: url('../../../../../assets/images/soumission-component.jpeg');
+}
+
+.administration{
+    background-image: url('../../../../../assets/images/administration-component.jpeg');
+}
+
+.execution{
+    background-image: url('../../../../../assets/images/execution-component.jpeg');
+}

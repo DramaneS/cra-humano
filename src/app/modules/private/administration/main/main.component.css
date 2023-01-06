@@ -1,0 +1,69 @@
+h3,
+h1 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #006E69;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+.ins,
+.ent,
+.uti,
+.div,
+.reg,
+.mail,
+.tymail,
+.par {
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    height: 100px;
+    padding-bottom: 50%;
+}
+
+.ins {
+    background-image: url('../../../../../assets/images/inscription.svg');
+}
+
+.ent {
+    background-image: url('../../../../../assets/images/entreprises.svg');
+}
+
+.uti {
+    background-image: url('../../../../../assets/images/users.svg');
+}
+
+.div {
+    background-image: url('../../../../../assets/images/divisions.svg');
+}
+
+.reg {
+    background-image: url('../../../../../assets/images/regions.svg');
+}
+
+.mail {
+    background-image: url('../../../../../assets/images/mails.svg');
+}
+
+.tymail {
+    background-image: url('../../../../../assets/images/mail-types.svg');
+}
+
+.par {
+    background-image: url('../../../../../assets/images/params.svg');
+}
+
+.con {
+    text-align: center;
+    margin: 0 auto;
+    width: 100px;
+    cursor: pointer;
+}

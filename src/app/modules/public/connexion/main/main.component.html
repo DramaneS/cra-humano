@@ -1,0 +1,196 @@
+<div id="media-connexion"></div>
+<div class="content">
+    <div class="app">Connexion</div>
+    <div class="humano-text-typo-h3" style="margin-top:30px;">
+        Être membre du réseau Humano, c’est bénéficier de toute sa force et d’une foule d’avantages!
+    </div>
+    <div class="humano-text-typo-h4 dec" style="text-align: left;">
+        <a>
+            <div class="row">
+                <div>
+                    Découvrir la solution Humano
+                </div>
+            <div class="im solution-arrow" style="width: 520px;">jhgfj</div>
+        </div>
+            <!-- <img src='../../../../assets/images/arrow-right-green-turquoise.png' class="solution-arrow" /> -->
+        </a>
+    </div>
+    <div class="row" style="margin-top:2%">
+        <div class="col-lg-4 ">
+            <div class="connexion" style="background-color: #006E69;">
+                <div class="humano-text-typo-h3" style="text-align: center; color: white;">Connexion</div>
+                <div class="humano-text-typo-h4 label1">
+                    Courriel
+                </div>
+                <div class="input-group flex-nowrap  ">
+                    <input type="text" placeholder="Numéro de téléphone" class="form-control" />
+                </div>
+                <div class="humano-text-typo-h4" style=" margin-top: 30px;">
+                    Mot de passe
+                </div>
+                <div class="input-group flex-nowrap">
+                    <input type="text", placeholder="Numéro de téléphone" class="form-control" />
+                </div>
+                <div class="humano-text-typo-h4" style="margin-top: 25px; color: black;">
+                    <input type="checkbox">
+                    <label class="form-check-label">
+                        Se souvenir de moi
+                    </label>
+                </div>
+                <div class="humano-text-typo-h4" style="color: #8FCAD5; cursor: pointer;" (click)="resetpassword()">Mot
+                    de passe oublier</div>
+                <div style="text-align: center;margin-top: 5%;">
+                    <a class=" humano-btn-rect connect">
+                        Connecter
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8" style="background-color: #F1F1F1;">
+            <div class="humano-text-typo-h3" style="text-align: center; color: #006E69;">Inscription</div>
+            <div class="connexion" style="border: 1px solid;">
+                <div class="row">
+                    <div class="col-sm-4 bor">
+                        <div>
+                            <button class="btn btns" disabled>1</button>
+                            <button class="humano-text-typo-h5" disabled
+                                style="border: none;color: #006E69;">INFORMATION DE VOTRE COMPAGNIE</button>
+                        </div>
+                        <div *ngIf="inscrit==0">
+                            <button class="btn" style="background-color: grey; color:white ;
+                            border-radius: 100%; font-size: 1.5rem; width: 50px;" disabled>2</button>
+                            <button class="humano-text-typo-h5" disabled style="border: none;">INFORMATIONS
+                                PERSONNELLES</button>
+                        </div>
+                        <div *ngIf="inscrit==1">
+                            <button class="btn btns">2</button>
+                            <button class="humano-text-typo-h5" style="border: none;color: #006E69;">INFORMATIONS
+                                PERSONNELLES</button>
+                        </div>
+                    </div>
+                    <div class="col-sm-8" *ngIf="inscrit==0">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Nom de l'entreprise
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" placeholder="Nom de l'entreprise" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Adresse du siege
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" name="" id="" placeholder="Adresse du siege"
+                                        class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Region d'affaires
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="1">Region1</option>
+                                        <option value="2">Region2</option>
+                                        <option value="3">Region3</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Site web
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" placeholder="Site web" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Région
+                                </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Region1</option>
+                                    <option value="2">Region2</option>
+                                    <option value="3">Region3</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Division
+                                </div>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="1">Region1</option>
+                                    <option value="2">Region2</option>
+                                    <option value="3">Region3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div style="text-align: right;">
+                            <a class=" humano-btn-rect inscrit" style="color: white;" (click)="ins()">
+                                Suivant
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-8" *ngIf="inscrit==1">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Prénom
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" name="" id="" placeholder="Prenom" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Nom
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" name="" id="" placeholder="Nom" class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Courriel
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" name="" id="" placeholder="Courriel" class="form-control" />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="humano-text-typo-h4">
+                                    Numéro de téléphone
+                                </div>
+                                <div class="input-group flex-nowrap  ">
+                                    <input type="text" name="" id="" placeholder="Numéro de téléphone"
+                                        class="form-control" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row insRtr" style="text-align: center;">
+                            <div class="col-sm-6">
+                                <a class=" humano-btn-rect svt " style="color: white; " (click)="ins()">
+                                    Retour
+                                </a>
+                            </div>
+                            <div class="col-sm-6">
+                                <a class=" humano-btn-rect svt" style="color: white;">
+                                    Je m'inscrit
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

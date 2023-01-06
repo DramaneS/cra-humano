@@ -1,0 +1,128 @@
+#media-connexion {
+    background-image: url('../../../../../assets/images/media-connexion.jpg');
+    height: 400px !important;
+    background-size: cover;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+.app {
+    text-shadow: 0px 4px #ccc;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.1rem;
+    color: #07322C !important;
+}
+
+.humano-text-typo-h3 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #000000;
+}
+
+.humano-text-typo-h4 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    color: #006E69;
+}
+
+.dec {
+    text-decoration: underline;
+    text-align: right;
+}
+
+.label1 {
+    color: white;
+}
+
+
+
+.content {
+    padding: 30px;
+}
+
+.humano-btn-rect {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 4px;
+    padding: 2px !important;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.3rem;
+    display: inline-block !important;
+    max-width: 231px;
+    min-width: 130px;
+    border-radius: 5px;
+}
+
+.connexion {
+    /* height: 450px; */
+    padding: 40px;
+}
+
+.inscrit {
+    margin-top: 45px;
+    margin-bottom: 5px;
+    background-color: #006E69;
+    text-align: center;
+
+}
+
+.svt {
+    background-color: #006E69;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.insRtr {
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+
+.connect {
+    color: #006E69 !important;
+    background-color: white;
+}
+
+.btns {
+    background-color: #006E69;
+    color: white;
+    border-radius: 100%;
+    font-size: 1.5rem;
+    width: 50px;
+}
+
+@media screen and (max-width: 574px) {
+    .bor {
+        border-bottom: 1px solid;
+    }
+}
+
+@media screen and (min-width: 574px) {
+    .bor {
+        border-right: 1px solid;
+        text-align: center;
+        padding-top: 5%;
+    }
+}
+
+.im{
+        background-image: url("../../../../../assets/images/arrow-right-green-turquoise.png");
+        background-size: cover;
+        height: 50px;
+        width: 20px;
+}
+
+/* 
+.solution-arrow {
+    height: 25px;
+    width: 25px;
+    margin-left: 5px;
+} */

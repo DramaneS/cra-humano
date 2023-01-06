@@ -1,0 +1,13 @@
+.footer-private{
+  height: 136px !important;
+}
+
+.humano-logo
+{
+  background-image: url('../../../../assets/images/logo-humano-1-white.png');
+  height: 80px;
+  padding: 5%;
+  width: 100%;
+  background-size: cover;
+display: block;
+}

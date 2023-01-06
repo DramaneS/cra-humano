@@ -1,0 +1,172 @@
+<nav class="navbar humano-bg-color-vert navbar-expand-md navbar-primary fixed-top bg-primary p-0">
+  <div class="grid w-100">
+    <div class="row w-auto">
+      <div class="  ">
+        <div class="container-fluid  px-0 pe-0  ">
+          <header class="d-flex container-fluid  flex-wrap   d-flex align-items-center  ">
+            <a href="/" class=" humano-logo  d-flex align-items-center mb-3 mb-md-0   text-dark text-decoration-none">
+              <!-- <img src="{{_environment.app.logoLocalUrl}}" style="filter: brightness(0) invert(1);" /> -->
+              <div class="logo"></div>
+            </a>
+            <ul class=" hide-lg-max   navbar-nav ps-1  me-auto ">
+              <li class="nav-item ps-2 pe-2 py-0 pb-0">
+                <a class="nav-link  text-white fs-4 text-underline-hover" routerLink="/contact">Mon profil</a>
+              </li>
+              <li class="nav-item ps-2 pe-2 py-0 pb-0">
+                <a class="nav-link  text-white fs-4 text-underline-hover" routerLink="/connexion">La coop</a>
+              </li>
+            </ul>
+            <div class="dropdown hide-lg-max    ">
+              <button
+                class="btn border-0 dropdown-toggle rounded-circle bg-white p-0 text-white text-center p-0  align-items-center justify-content-center  d-flex"
+                type="button" data-bs-toggle="dropdown" aria-expanded="false" style="height: 70px; width: 70px; ">
+                <div class="fw-bold fs-2   ms-3" style="color:#006E69;">D</div>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end  dropdown-menu-lick " style="min-width:300px;">
+                <li class="text-left ps-2">
+                  <a class="dropdown- align-middle text-decoration-none text-black  text-left d-flex  "
+                    href="javascript:void()">
+                    <div class="user" style="width: 100px;margin-right: -15%;"></div>
+                    <div class=" fs-6 ms-2 ">
+                      <div class="  text-left">
+                        {{_environment.user.firstname}}&nbsp;{{_environment.user.lastname}}
+                      </div>
+                      <div class=" text-left">
+                        ( {{_environment.user.lastname}} )
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item align-middle" href="javascript:void()">
+                    <div class="row" style="margin-left: 5%;">
+                      <div class="admin" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                      Administration
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item align-middle" href="javascript:void()">
+                    <div class="row" style="margin-left: 5%;">
+                      <div class="info" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                      Mes informations personnelles
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item align-middle" href="javascript:void()">
+                    <div class="row" style="margin-left: 5%;">
+                      <div class="prefe" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                      Préferences
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li>
+                  <a class="dropdown-item align-middle" href="javascript:void()">
+                    <div class="row" style="margin-left: 5%;">
+                      <div class="decon" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                      Déconnexion
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="  hide-lg-min ms-auto text-white fs-3" style="max-width:40px;">
+              <a href="javascript:void()" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop" class=" text-white ">
+                <i class="bi bi-list "></i>
+              </a>
+            </div>
+          </header>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="staticBackdrop"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+
+  <div class="offcanvas-header  humano-bg-color-vert  border-bottom  border-light" style="height:94px;">
+    <a routerlink="/" class="humano-logo text-start">
+      <!-- <img src="{{_environment.app.logoLocalUrl}}" style="filter: brightness(0) invert(1);" /> -->
+      <div class="logo"></div>
+    </a>
+    <button type="button" class="btn-close text-white me-2 pe-2 text-white btn-white " data-bs-dismiss="offcanvas"
+      aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body    humano-bg-color-vert ">
+    <ul class="    navbar-nav  align-self-top  ">
+      <li class="nav-item ps-2 pe-2">
+        <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/contact">Mon profil</a>
+      </li>
+      <li class="nav-item ps-2 pe-2">
+        <a class="nav-link  text-white fs-4 p-0  text-underline-hover" routerLink="/connexion">La coop</a>
+      </li>
+    </ul>
+    <div class="  navbar-nav  fixed-bottom ">
+      <div class=" dropup ">
+        <button class="btn   border-0  border-top  p-1   " type="button" data-bs-toggle="dropdown" aria-expanded="false"
+          style=" width:400px;border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px;">
+          <a class="  align-middle text-decoration-none   d-flex  d-flex align-items-center  " href="javascript:void()">
+            <div class="useRepon" style="width: 50px;height: 50px; background-color: white; border-radius: 100%;"></div>
+            <!-- <img src="../../assets/images/default_user.svg" style="height: 50px; filter: brightness(0) invert(1);"
+              class=" p-0 m-0 rounded-circle border" /> -->
+            <div class=" fs-6 ms-2 ">
+              <div class="  text-start text-white">
+                {{_environment.user.firstname}}&nbsp;{{_environment.user.lastname}}
+              </div>
+              <div class=" text-start text-white">
+                ( {{_environment.user.lastname}} )
+              </div>
+            </div>
+            <i class="bi bi-caret-up-fill text-white ms-auto" style="font-size:12px;"></i>
+          </a>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end  dropdown-menu-lick " style="min-width:300px;">
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="admin" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Administration
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="info" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Mes informations personnelles
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="prefe" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Préférences
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="decon" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Déconnexion
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

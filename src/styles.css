@@ -1,1 +1,480 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+body {
+    font-family: Noto Serif !important;
+    background: #fff;
+  }
+
+
+.text-underline-hover:hover {
+    text-decoration: underline;
+}
+
+/**
+ * bd-color
+ */
+
+.humano-bg-color-rouge
+{
+  background-color: #B82B29 !important;
+}
+.humano-bg-color-bleu
+{
+  background-color:   #16214E !important;
+}
+.humano-bg-color-vert
+{
+  background-color:  #07322C !important;
+}
+.humano-bg-color-turquoise
+{
+  background-color: #006E69 !important;
+}
+.humano-bg-color-verteclat
+{
+  background-color: conic-gradient(from 264.55deg at 50% 41.92%, #006E69 -84.84deg, #8FCAD5 142.43deg, #006E69 275.16deg, #8FCAD5 502.43deg) !important;
+}
+
+
+.humano-bg-color-noirclair
+{
+  background-color: #0C0B0B !important;
+}
+
+.humano-bg-color-bleuclair
+{
+  background-color: #8FCAD5 !important;
+}
+.humano-bg-color-blanc
+{
+  background-color: #F5F5F5 !important;
+}
+.humano-bg-color-blancreal
+{
+  background-color: #FFFFFF !important;
+}
+
+.humano-bg-color-transparent
+{
+  background-color: transparent !important;
+}
+.humano-bg-color-grisplatre
+{
+  background-color: #F1F1F1 !important;
+}
+.humano-bg-color-grisfonce
+{
+  background-color: #4B4D4F !important;
+}
+
+.humano-bg-color-noir
+{
+  background-color: #000000 !important;
+}
+.humano-bg-color-vertlinear
+{
+  background-color: linear-gradient(180deg, #062823 0%, #006E69 58.95%) !important;
+}
+
+.humano-bg-color-vertlinear
+{
+  background-color: linear-gradient(180deg, #062823 0%, #006E69 58.95%)  !important;
+}
+.humano-bg-color-rougeangular
+{
+  background-color: conic-gradient(from 43.37deg at 50% 50%, #F90300 0deg, #B82B29 67.5deg, #C8201E 150deg, #D41816 236.25deg, #E40E0B 309.38deg, #F90300 360deg) !important;
+}
+.humano-bg-color-gridmoyen
+{
+  background-color: #B4B4B4 !important;
+}
+/**
+ * text-color
+ */
+ .humano-text-color-rouge
+ {
+   color: #B82B29 !important;
+ }
+ .humano-text-color-bleu
+ {
+   color:   #16214E !important;
+ }
+ .humano-text-color-vert
+ {
+   color:  #07322C !important;
+ }
+  .humano-text-color-turquoise
+ {
+   color: #006E69 !important;
+ }
+ .humano-text-color-verteclat
+ {
+   color: conic-gradient(from 264.55deg at 50% 41.92%, #006E69 -84.84deg, #8FCAD5 142.43deg, #006E69 275.16deg, #8FCAD5 502.43deg) !important;
+ }
+ .humano-text-color-bleuclair
+ {
+   color: #8FCAD5 !important;
+ }
+ .humano-text-color-blanc
+ {
+   color: #F5F5F5 !important;
+ }
+ .humano-text-color-blancreel
+ {
+   color: #FFFFFF !important;
+ }
+ .humano-text-color-grisplatre
+ {
+   color: #F1F1F1 !important;
+ }
+ .humano-text-color-grisfonce
+ {
+   color: #4B4D4F !important;
+ }
+
+ .humano-text-color-noir
+ {
+   color: #000000 !important;
+ }
+ .humano-text-color-vertlinear
+ {
+   color: linear-gradient(180deg, #062823 0%, #006E69 58.95%) !important;
+ }
+
+ .humano-text-color-vertlinear
+ {
+   color: linear-gradient(180deg, #062823 0%, #006E69 58.95%) !important;
+ }
+ .humano-text-color-rougeangular
+ {
+   color: conic-gradient(from 43.37deg at 50% 50%, #F90300 0deg, #B82B29 67.5deg, #C8201E 150deg, #D41816 236.25deg, #E40E0B 309.38deg, #F90300 360deg) !important;
+ }
+ .humano-text-color-gridmoyen
+ {
+   color: #B4B4B4 !important;
+ }
+
+
+
+
+.humano-logo img
+{
+     height: 90px;
+ }
+@import '~mdb-angular-ui-kit/assets/scss/mdb.scss';
+
+.p{
+  line-height: 30px
+}
+
+
+
+/* ------------------------------------------------------------------- */
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+@media (max-width: 576px)
+{
+  .d-vsm-block , .d-none.d-vsm-block {
+      display: block !important;
+  }
+}
+
+
+.awkaa-data-list-grid-item
+{
+  /*width: 240px;*/
+  height: 450px;
+  margin-top:10px;
+}
+
+
+@media (max-width: 576px) and (min-width: 0px)
+{
+    .awkaa-data-list-grid-items-container
+    {
+      display: grid;
+      grid-column-gap: 10px;
+      grid-row-gap: 10px;
+      grid-template-columns: repeat(1, 1fr);
+      justify-content: space-between;
+
+    }
+}
+
+@media (max-width: 768px)  and (min-width: 576px)
+{
+  .awkaa-data-list-grid-items-container
+  {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+
+  }
+}
+@media  (min-width: 769px)
+{
+  .awkaa-data-list-grid-items-container
+  {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+
+  }
+}
+
+.invalid-feedback
+{
+  margin-top : 0 !important ;
+}
+.cursor-pointer{
+  cursor: pointer !important;
+}
+
+html { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+
+    position: relative;
+ }
+
+.single-page-app-logo
+{
+  height: 90px;
+  width: 90px;
+}
+.awkaa-main-content
+{
+  max-width: 900px !important ;
+  width: 100% !important ;
+/*  margin-top:50px;*/
+}
+
+.awkaa-alert{
+  top:90px;
+  right: 10px;
+}
+
+
+.ngx-slider .ngx-slider-pointer  {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    top: -14px;
+    background-color: #0d6efd !important;
+    z-index: 3;
+    border-radius: 16px;
+}
+
+.ngx-slider .ngx-slider-selection {
+  background-color: #0d6efd !important;
+
+}
+
+
+
+
+
+.bg-success-me{
+  background-color: #43e243 !important ;
+}
+
+
+.bg-warning-me{
+  background-color: #f4baba !important ;
+}
+
+
+
+.color-success-me{
+/*   color: #096a09 !important ;*/
+   color: #00D100 !important ;
+}
+
+
+.color-warning-me{
+ color: #f4baba !important ;
+
+}
+
+.fsw-30 {
+  font-size: 30px ! important
+}
+
+
+.fsw-50 {
+  font-size: 50px ! important
+}
+
+
+.fsw-70 {
+  font-size: 70px ! important
+}
+
+
+
+
+
+
+
+
+
+
+.one-page-navigation
+{
+  position : relative;
+  height: calc(100vh);
+  overflow-y: scroll;
+ }
+
+.one-page-navigation *
+{
+  /*font-size:12px;*/
+}
+/*---------*/
+
+
+
+
+.one-page-navigation-sections
+{
+  position : relative;
+  margin-left: 5px;
+}
+
+.one-page-navigation-sections-section
+{
+  min-height:20px;
+  min-width:300px;
+/*
+  clear:left;
+  box-shadow: 0px 0px 4px #999;
+  border-radius:2px;
+  position:relative;
+  padding-bottom:5px;
+  margin-top : 20px;
+  */
+}
+.one-page-navigation-sections-section-title
+{
+  /*margin-left:0px;
+  font-size:1.1em;
+  border-bottom:1px solid #ccc ;
+
+  height:40px;
+  width:100%;
+  font-weight:bold;
+  padding:7px;*/
+}
+.one-page-navigation-sections-section-content
+{
+  margin : 5px ;
+  padding-bottom : 10px;
+}
+
+/*---------*/
+
+.one-page-navigation-triggers
+{
+    min-width : 70px ;
+
+   position : fixed ;
+   /*margin-top : 20px ;*/
+   z-index : 10000 ;
+ }
+.one-page-navigation-triggers-trigger
+{
+/*   width:100%;
+  color:#333;
+  text-decoration:none;
+  display:block;
+  padding:5px 5px 1px 0px;
+  margin:0px;*/
+}
+.one-page-navigation-triggers-trigger:hover
+{
+  /*color:#000 !important;
+  text-decoration:underline;
+  font-weight:bold;
+  cursor:pointer;*/
+}
+.one-page-navigation-triggers-trigger.active
+{
+  /*color:#000 !important;
+  font-weight:bold;
+  text-decoration:underline;*/
+}
+
+
+/*****/
+.data-table-even
+{
+  background-color: #f9f9f9 ;
+}
+.data-table-odd
+{
+  background-color: transparent ;
+}
+
+
+/*****/
+.one-page-navigation-triggers-trigger.nav-link
+{
+  color: #000 !important;
+
+}
+.one-page-navigation-triggers-trigger.nav-link.active{
+    color: #0d6efd !important;
+    background-color: transparent !important;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+.nav-link.one-page-navigation-triggers-trigger.active
+{
+  background-image: url('assets/imagerecent/icon-one-page-navigation-triggers-trigger-active.svg');
+  background-size: 7px 7px ;
+  background-repeat: no-repeat;
+  background-position: top 50% right 0px;
+
+}
+
+/*****/
+
+
+.awkaa-dataTable-row-hover:hover{
+    background-color: #c7c7c7;
+}
+
+
+/*****/
+.bi-awkaa{
+  height: 16px;
+  width: 16px;
+  background-repeat:no-repeat;
+
+  display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-feature-settings: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -0.125em;
+    -webkit-font-smoothing: antialiased;
+}
+.bi-awkaa-save{
+  background-image: url('assets/imagerecent/icon-save.svg');
+
+
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

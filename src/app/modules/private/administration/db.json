@@ -1,0 +1,18 @@
+{
+  "test": [
+    {
+      "id":1,
+      "prenom":"dramane",
+      "nom":"diarra",
+      "email":"diarrad536@gmail.com",
+      "entreprise":"BBS"
+    },
+    {
+      "id":1,
+      "prenom":"dramane",
+      "nom":"diarra",
+      "email":"diarrad536@gmail.com",
+      "entreprise":"BBS"
+    }
+  ]
+}

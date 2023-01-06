@@ -1,0 +1,71 @@
+#media-contact {
+    background-image: url('../../../../../assets/images/media-contact.jpg');
+    height: 400px !important;
+    margin-top: -10px;
+    margin-bottom: 30px;
+    background-size: cover;
+}
+.app {
+    text-shadow: 0px 4px #ccc;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.1rem;
+    color: #07322C !important;
+    }
+.humano-text-typo-h3 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    color: #006E69;
+    margin-top:10px;
+    margin-top: 30px;
+}
+.content {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 30px;
+}
+.humano-text-typo-h4 {
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+    color: white;
+}
+.humano-text-typo{
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+.contact{
+    min-height:470px;
+    margin-top:30px;
+    padding-left:40px;
+    padding-right:40px;
+    padding-bottom: 30px;
+}
+.humano-btn-rect {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 7px 4px;
+    display: inline-block;
+    padding: 2px !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Noto Serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.1rem;
+    display: inline-block !important;
+    text-decoration: none;
+    max-width: 231px;
+    min-width: 180px;
+    color: #006E69 !important;
+    background-color: white;
+    border-radius: 5px;
+
+}

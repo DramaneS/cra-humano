@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="row">
+        <div class="title">
+            Nouveau mail
+            <p style="font-size: 1.2rem;">Cueillette d'information</p>
+        </div>
+        <div>
+            <form>
+                <div class="row">
+                    <div class="form-group col-lg-6">
+                    <label>Type de mail</label>
+                    <select class="form-control form-control-lg">
+                        <option>-- Selection un type de mail --</option>
+                        <option>Administrateur</option>
+                        <option>Users</option>
+                        <!-- <option *ngFor="let park of listePark" value="{{park.id}}">
+                            {{park.nom}}</option> -->
+                    </select>
+                </div>
+                <div class="form-group col-lg-6">
+                    <label>Code</label>
+                    <input class="form-control form-control-lg" placeholder="Code">
+                </div>
+                </div>
+                
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input class="form-control form-control-lg" placeholder="Subject">
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="5" class="form-control form-control-lg" placeholder="Nom de l'entreprise"></textarea>
+                </div>
+                <div style="text-align: center; padding-bottom: 10px;">
+                    <button type="submit" class="btn btn-lg btn-success"><i class="bi bi-send"></i>&nbsp;Enregistrer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

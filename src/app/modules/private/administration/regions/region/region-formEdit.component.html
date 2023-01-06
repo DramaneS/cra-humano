@@ -1,0 +1,153 @@
+<div class="row sidebar-sticky"  style="margin-top: 10%;">
+  <div class="col position-relative" style="max-width: 240px;">
+    <div class=" position-fixed  border-end border-gray" style="width:191px;height:130px;margin-top:10px; ">&nbsp;</div>
+    <ul class="nav nav-pills  position-fixed  flex-column  one-page-navigation-triggers ms-0   fs-6  "
+      style="width:194px;">
+
+      <li class="nav-item   position-relative">
+        <span class="pin  "></span>
+        <a class="nav-link   cursor-pointer  one-page-navigation-triggers-trigger  active  "
+          id="one-page-navigation-section-edit-region-1">
+          <i class="bi bi-credit-card-2-front pe-1"> </i>Infos générale
+        </a>
+        <span class="pin"></span>
+      </li>
+
+      <li class="nav-item   position-relative">
+        <span class="pin  "></span>
+        <a class="nav-link   cursor-pointer  one-page-navigation-triggers-trigger  active  "
+          id="one-page-navigation-section-edit-region-2">
+          <i class="bi bi-credit-card-2-front pe-1"> </i>Historique édition
+        </a>
+        <span class="pin"></span>
+      </li>
+
+      <li class="nav-item   position-relative">
+        <span class="pin  "></span>
+        <a class="nav-link   cursor-pointer  one-page-navigation-triggers-trigger  active  "
+          id="one-page-navigation-section-edit-region-3">
+          <i class="bi bi-credit-card-2-front pe-1"> </i>
+        </a>
+        <span class="pin"></span>
+      </li>
+
+    </ul>
+  </div>
+  <div class="col">
+
+    <div class="card one-page-navigation-sections-section my-2" id="one-page-navigation-section-edit-region-1-content">
+      <div class="card-body">
+        <div class="one-page-navigation-sections-section-title   fw-bold  ">
+          <div class="w-100  fs-6">
+            <i class="bi bi-credit-card-2-front">
+            </i> Infos générale
+          </div>
+        </div>
+        <div class="one-page-navigation-sections-section-content">
+          <table class="table">
+            <tbody>
+
+              <tr>
+                <td class="fw-bolder">Code</td>
+                <td class="w-50">
+
+                  <div class="   has-validation  ">
+                    <input type="number" placeholder="   " class="form-control" [class.is-invalid]=" invalid.code"
+                      [(ngModel)]="entityToEdit.code" />
+                    <div class="invalid-feedback">
+                      {{ invalid.code ? invalid.code : "" }}
+                    </div>
+                  </div>
+
+                </td>
+              </tr>
+
+              <tr>
+                <td class="fw-bolder">Nom de la région</td>
+                <td class="w-50">
+
+                  <div class="   has-validation  ">
+                    <input type="text" placeholder="   " class="form-control" [class.is-invalid]=" invalid.name"
+                      [(ngModel)]="entityToEdit.name" />
+                    <div class="invalid-feedback">
+                      {{ invalid.name ? invalid.name : "" }}
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card one-page-navigation-sections-section my-2" id="one-page-navigation-section-edit-region-2-content">
+      <div class="card-body">
+        <div class="one-page-navigation-sections-section-title   fw-bold  ">
+          <div class="w-100  fs-6">
+            <i class="bi bi-credit-card-2-front">
+            </i> Historique édition
+          </div>
+        </div>
+        <div class="one-page-navigation-sections-section-content">
+          <table class="table">
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="card one-page-navigation-sections-section my-2" id="one-page-navigation-section-edit-region-3-content">
+      <div class="card-body">
+        <div class="one-page-navigation-sections-section-title   fw-bold  ">
+          <div class="w-100  fs-6">
+            <i class="bi bi-credit-card-2-front">
+            </i>
+          </div>
+        </div>
+        <div class="one-page-navigation-sections-section-content">
+          <table class="table">
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col  d-flex flex-column " style="max-width: 300px;">
+
+    <div class="position-fixed d-flex flex-column ">
+      <button class="btn btn- border my-1" title="Retouner" type="button" (click)="back()">
+        <i class="bi bi-arrow-90deg-left"></i> Retouner
+      </button>
+      <button class="btn btn- border my-1" title="Enregistrer" type="button" (click)="save()">
+        <i class=" bi-awkaa bi-awkaa-save pe-1 "></i>
+        Enregistrer
+      </button>
+    </div>
+  </div>
+  <!-- <div class="col  d-flex flex-column " style="max-width: 300px;">
+              <div class="position-fixed d-flex flex-column ">
+                <button class="btn btn- border my-1" title="Retouner" type="button" (click)="back()">
+                  <i class="bi bi-arrow-90deg-left"></i> Retouner
+                </button>
+                <button class="btn btn- border my-1" title="Modifier" type="button" (click)="update()" >
+                  <i class="bi bi-pen pe-1 "></i> Modifier
+                </button>
+                <button class="btn btn- border  my-1" title="Supprimer" type="button" (click)="delete()" >
+                  <i class="bi bi-trash3"></i> Supprimer
+                </button>
+                <div class="dropdown" title="Plus">
+                  <button class="btn btn- dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-three-dots-vertical"></i> Actions
+                  </button>
+                  <ul class="dropdown-menu">
+                  </ul>
+                </div>
+              </div>
+            </div> -->
+</div>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   height="28"
+   id="icon"
+   viewBox="0 0 28 28"
+   width="28"
+   version="1.1"
+   sodipodi:docname="gender.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="7.9429201"
+     inkscape:cx="15.296641"
+     inkscape:cy="22.661691"
+     inkscape:window-width="1312"
+     inkscape:window-height="756"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="icon" />
+  <defs
+     id="defs11">
+    <style
+       id="style9">
+      .cls-1 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <rect
+     class="cls-1"
+     data-name="&lt;Transparent Rectangle&gt;"
+     height="32"
+     id="_Transparent_Rectangle_"
+     width="32"
+     x="0"
+     y="0" />
+  <path
+     clip-rule="evenodd"
+     d="m 9.1853729,6.4748482 c -2.4852789,0 -4.5000003,1.9898486 -4.5000003,4.4444438 0,2.150223 1.5459842,3.943736 3.5999998,4.355557 v 1.866666 H 5.5853728 v 1.777776 h 2.6999996 v 3.555557 h 1.7999986 v -3.555557 h 2.700002 v -1.777776 h -2.700002 v -1.866666 c 2.053981,-0.411821 3.600001,-2.205334 3.600001,-4.355557 0,-2.4545952 -2.014739,-4.4444438 -4.4999991,-4.4444438 z M 6.485372,10.919292 c 0,1.472757 1.2087903,2.66667 2.7000009,2.66667 1.4912101,0 2.7000001,-1.193913 2.7000001,-2.66667 0,-1.4727552 -1.20879,-2.6666662 -2.7000001,-2.6666662 -1.4912106,0 -2.7000009,1.193911 -2.7000009,2.6666662 z"
+     fill="currentColor"
+     fill-rule="evenodd"
+     id="path139"
+     style="stroke-width:0.89442" />
+  <path
+     clip-rule="evenodd"
+     d="m 18.85274,9.2390816 0.0017,-2.243769 4.439656,0.00838 -0.0045,7.8532334 -1.268474,-0.0027 0.0026,-4.025905 -1.930807,3.415374 c 0.836051,2.182287 0.707618,5.17548 -0.385299,7.108706 -1.238411,2.190592 -3.246285,2.190592 -4.484706,0 -1.238432,-2.190592 -1.238432,-5.742251 0,-7.932956 1.076735,-1.904588 2.735163,-2.153241 3.963743,-0.74594 l 1.939025,-3.4303604 z m -2.733635,5.7671604 c 0.74305,-1.314287 1.947752,-1.314287 2.690825,0 0.743072,1.314401 0.743072,3.445419 0,4.75982 -0.743073,1.3144 -1.947775,1.3144 -2.690825,0 -0.743053,-1.314401 -0.743053,-3.445419 0,-4.75982 z"
+     fill="currentColor"
+     fill-rule="evenodd"
+     id="path206"
+     style="stroke-width:0.84354" />
+</svg>

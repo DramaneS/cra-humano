@@ -1,0 +1,17 @@
+
+
+  .awkaa-display-header .btn-check:checked + .btn,
+  .awkaa-display-header :not(.btn-check) + .btn:active,
+  .awkaa-display-header .btn:first-child:active,
+  .awkaa-display-header .btn.active,
+  .awkaa-display-header .btn.show {
+
+    border-color:#CCC !important;
+    border-radius: 4px;
+   }
+
+  .awkaa-display-header .btn{
+    margin-top: 2px !important;
+    height: 30px !important;
+    padding-top: 3px  !important;
+  }

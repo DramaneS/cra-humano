@@ -1,0 +1,228 @@
+<nav class="navbar humano-bg-color-vert navbar-expand-md navbar-primary fixed-top bg-primary p-0">
+  <div class="grid w-100">
+    <div class="row w-auto">
+      <div class="container-fluid  px-0 pe-0  ">
+        <header class="d-flex container-fluid  flex-wrap   d-flex align-items-center" style="padding-top: 1%;">
+          <a href="/"
+            class=" humano-logo  d-flex align-items-center mb-3 mb-md-0 me-md-auto  me-auto text-decoration-none">
+            <!-- <img src="{{_environment.app.logoLocalUrl}}" style="filter: brightness(0) invert(1);" /> -->
+            <div class="logo"></div>
+          </a>
+          <ul class=" hide-lg-max   navbar-nav ms-auto   ">
+            <li class="nav-item ps-2 pe-2 p-0">
+              <a class="nav-link active text-white fs-4 text-underline-hover" routerLink="/solutions">Solutions</a>
+            </li>
+            <li class="nav-item sub ps-2 pe-2 p-0">
+              <a class="nav-link  text-white fs-4  text-underline-hover" routerLink="/services">
+                Services <i class="bi bi-caret-down-fill text-white align-middle " style="font-size:12px;"></i>
+              </a>
+              <ul class="navbar-nav ps-3 humano-bg-color-vert sub pt-2">
+                <li class="nav-item ps-2 pe-2"  style="padding: 3%;">
+                  <a class="nav-link  text-white fs-4 p-0 text-underline-hover"
+                    routerLink="/services/publier-un-projet"> Publier un projet </a>
+                </li>
+                <li class="nav-item ps-2 pe-2" style="padding: 3%;">
+                  <a class="nav-link  text-white fs-4 p-0 text-underline-hover"
+                    routerLink="/services/trouver-un-projet"> Trouver un projet </a>
+                </li>
+                <li class="nav-item ps-2 pe-2" style="padding: 3%;">
+                  <a class="nav-link  text-white fs-4 p-0 text-underline-hover"
+                    routerLink="/services/trouver-une-entreprise"> Trouver une entreprise </a>
+                </li>
+                <li class="nav-item ps-2 pe-2" style="padding: 3%;">
+                  <a class="nav-link  text-white fs-4 p-0 text-underline-hover"
+                    routerLink="/services/services-de-nos-partenaires"> Services de nos partenaires </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item ps-2 pe-2 py-0 pb-0">
+              <a class="nav-link  text-white fs-4 text-underline-hover" routerLink="/apropos">A propos</a>
+            </li>
+            <li class="nav-item ps-2 pe-2 py-0 pb-0">
+              <a class="nav-link  text-white fs-4 text-underline-hover" routerLink="/contact">Contact</a>
+            </li>
+            <li class="nav-item ps-2 pe-2 py-0 pb-0">
+              <a class="nav-link  text-white fs-4 text-underline-hover" routerLink="/connexion">Connexion</a>
+            </li>
+          </ul>
+          <div class="dropdown hide-lg-max">
+            <button class="btn border-0 dropdown-toggle" type="button" style="margin-top: 10px;"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <div class="logos" style="border-radius: 100%"></div>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end  dropdown-menu-lick " style="min-width:300px;">
+              <li class="text-left ps-2">
+                <a class="dropdown- align-middle text-decoration-none text-black  text-left d-flex  "
+                  href="javascript:void()">
+                  <div class="user" style="width: 100px;margin-right: -15%;"></div>
+                  <div class=" fs-6 ms-2 ">
+                    <div class="  text-left">
+                      {{_environment.user.firstname}}&nbsp;{{_environment.user.lastname}}
+                    </div>
+                    <div class=" text-left">
+                      ( {{_environment.user.lastname}} )
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item align-middle" href="javascript:void()">
+                  <div class="row" style="margin-left: 5%;">
+                    <div class="pro" style="width: 100px;margin-right: -25%; height: 25px;"></div>
+                    Profil
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item align-middle" href="javascript:void()">
+                  <div class="row" style="margin-left: 5%;">
+                    <div class="pla" style="width: 100px;margin-right: -25%; height: 25px;"></div>
+                    Plateforme
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item align-middle" href="javascript:void()">
+                  <div class="row" style="margin-left: 5%;">
+                    <div class="favo" style="width: 100px;margin-right: -25%; height: 25px;"></div>
+                    Favoris
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li>
+                <a class="dropdown-item align-middle" href="javascript:void()">
+                  <div class="row" style="margin-left: 5%;">
+                    <div class="deconnect" style="width: 100px;margin-right: -25%; height: 25px;"></div>
+                    Déconnexion
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="  hide-lg-min ms-auto text-white fs-3" style="max-width:40px;">
+            <a href="javascript:void()" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+              aria-controls="staticBackdrop" class=" text-white ">
+              <i class="bi bi-list "></i>
+            </a>
+          </div>
+        </header>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="staticBackdrop"
+  aria-labelledby="offcanvasWithBothOptionsLabel">
+  <div class="offcanvas-header  humano-bg-color-vert  border-bottom  border-light" style="height:94px;">
+    <a routerlink="/" class="humano-logo text-start">
+      <div class="logo"></div>
+      <!-- <img src="{{_environment.app.logoLocalUrl}}" style="filter: brightness(0) invert(1);" /> -->
+    </a>
+    <button type="button" class="btn-close text-white me-2 pe-2 text-white btn-white " data-bs-dismiss="offcanvas"
+      aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body    humano-bg-color-vert ">
+    <ul class="    navbar-nav  align-self-top  ">
+      <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+        <a class="nav-link active text-white fs-4  p-0  text-underline-hover" routerLink="/solutions">Solutions</a>
+      </li>
+      <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+        <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/services">Services</a>
+        <ul class="    navbar-nav ps-3 ">
+          <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+            <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/services/publier-un-projet">
+              Publier un projet </a>
+          </li>
+          <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+            <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/services/trouver-un-projet">
+              Trouver un projet </a>
+          </li>
+          <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+            <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/services/trouver-une-entreprise">
+              Trouver une entrprise </a>
+          </li>
+          <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+            <a class="nav-link  text-white fs-4 p-0 text-underline-hover"
+              routerLink="/services/services-de-nos-partenaires"> Service de nos partenaires </a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+        <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/apropos">A propos</a>
+      </li>
+      <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+        <a class="nav-link  text-white fs-4 p-0 text-underline-hover" routerLink="/contact">Contact</a>
+      </li>
+      <li class="nav-item ps-2 pe-2" style="padding: 2%;">
+        <a class="nav-link  text-white fs-4 p-0  text-underline-hover" routerLink="/connexion">Connexion</a>
+      </li>
+    </ul>
+    <div class="navbar-nav  fixed-bottom">
+      <div class=" dropup ">
+        <button class="btn   border-0  border-top  p-1   " type="button" data-bs-toggle="dropdown" aria-expanded="false"
+          style=" width:400px;border-radius:0px; -webkit-border-radius:0px; -moz-border-radius:0px;">
+          <a class="  align-middle text-decoration-none   d-flex  d-flex align-items-center  " href="javascript:void()">
+            <!-- <img src="../../assets/images/default_user.svg" style="height: 50px; filter: brightness(0) invert(1);"
+              class=" p-0 m-0 rounded-circle border" /> -->
+            <div class="useRepon" style="width: 50px;height: 50px; background-color: white; border-radius: 100%;"></div>
+            <div class=" fs-6 ms-2 ">
+              <div class="  text-start text-white">
+                {{_environment.user.firstname}}&nbsp;{{_environment.user.lastname}}
+              </div>
+              <div class=" text-start text-white">
+                ( {{_environment.user.lastname}} )
+              </div>
+            </div>
+            <i class="bi bi-caret-up-fill text-white ms-auto" style="font-size:12px;"></i>
+          </a>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-lg-end  dropdown-menu-lick " style="min-width:300px;">
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="pro" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Profil
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="pla" style="width: 100px;margin-right: -25%; height: 50px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Plateforme
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="favo" style="width: 100px;margin-right: -25%; height: 25px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Favoris
+              </div>
+            </a>
+          </li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li>
+            <a class="dropdown-item align-middle" href="javascript:void()">
+              <div class="row" style="margin-left: 5%;">
+                <div class="deconnect" style="width: 100px;margin-right: -25%; height: 25px;"></div>
+                <!-- <img src="../../assets/images/member-ship-profile.svg" style="height: 15px;" class=" p-0 m-0 " /> -->
+                Déconnexion
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

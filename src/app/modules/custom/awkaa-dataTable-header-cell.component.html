@@ -1,0 +1,15 @@
+<div class="h-100 w-100  d-flex flex-row">
+
+  <div class="fw-bold  align-self-start d-flex border-indigo w-70  flex-grow-1 align-middle ">
+    <span  *ngIf=" titleAlign == 'left' " class="flex-grow-1 text-left fs- cursor-pointer" (click)="requestSortChange()" >{{title}}</span>
+    <span  *ngIf=" titleAlign == 'center' " class="flex-grow-1 text-center fs- cursor-pointer" (click)="requestSortChange()" >{{title}}</span>
+    <span  *ngIf=" titleAlign == 'right' " class="flex-grow-1 text-right fs- cursor-pointer" (click)="requestSortChange()" >{{title}}</span>
+
+  </div>
+
+  <div class="fw-bold align-self-end h-100 d-flex w-30 text-center flex-grow-5 align-middle cursor-pointer" (click)="requestSortChange()" title="Trier">
+    <i *ngIf="sorterCellActiveId != '' && sorterCellActiveId === id  && sorterState == 'up' " class="bi bi-caret-up-fill my-auto fw-bold  "     ></i>
+    <i *ngIf="sorterCellActiveId != '' && sorterCellActiveId === id  && sorterState == 'down' " class="bi bi-caret-down-fill my-auto fw-bold "   ></i>
+  </div>
+
+</div>

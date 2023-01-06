@@ -1,0 +1,66 @@
+<body>
+    <div  style="margin-top: 7%;">
+        <div class="container" >
+            <div class="row">
+                <div class="col-sm-5">
+                    <button type="button" class="btn btn-success btn-lg" (click)="add()">
+                        Ajouter nouveau parametre
+                        <i class="bi bi-plus-lg"></i>
+                    </button>               
+                </div>
+                <div class="col-sm-5">
+                    <input class=" btn-lg"
+                    placeholder="Recherche"
+                    >
+                </div>
+                <div class="col-sm-2">
+                    <input class=" btn-lg" disabled
+                    value="Total: 2"
+                    >
+                </div>
+            </div>
+        </div>
+        <table class="table table-hover align-middle mb-0">
+
+            <thead class="bg">
+                <tr>
+                    <th>Code</th>
+                    <th>Nom du parametre</th>
+                    <th>Valeur</th>
+                    <th style="text-align: center;">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td >
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> 001Param </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td >
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> Test de vues </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex align-items-center">
+                            <div class="ms-3">
+                                <p class="fw-bold mb-1"> www.humano.com </p>
+                            </div>
+                        </div>
+                    </td>
+                    <td style="text-align: center;">
+                        <button type="button" class="btn btn-warning btn-sm mod">
+                            Modifier
+                            <i class="bi bi-pencil-square"></i>                   
+                        </button>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button" class="btn btn-danger btn-sm mod">
+                            Supprimer
+                            <i class="bi bi-trash3"></i>
+                        </button>
+                    </td>
+                </tr>

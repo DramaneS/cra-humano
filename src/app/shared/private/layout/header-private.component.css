@@ -1,0 +1,82 @@
+.navbar
+{
+  height: 95px  !important;
+}
+
+
+
+@media screen and (min-width: 993px) {
+    .hide-lg-min{
+      display:none   !important;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .hide-lg-max{
+      display:none   !important;
+    }
+}
+
+
+.nav-item.sub   .navbar-nav.sub
+{
+  display: none !important;
+  position: absolute !important;
+}
+
+
+.nav-item.sub:hover   .navbar-nav.sub
+{
+  display: block !important;
+  position: absolute !important;
+}
+
+.logo{
+  background-image: url('../../../../assets/images/logo-humano-1.png');
+  background-size: 48%;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: 400px;
+  margin-right: -150px;
+}
+.user{
+  background-image: url('../../../../assets/images/default_user.svg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+.admin{
+  background-image: url('../../../../assets/images/administration.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+.info{
+  background-image: url('../../../../assets/images/informations-personnelles.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+.prefe{
+  background-image: url('../../../../assets/images/preferences.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+.decon{
+  background-image: url('../../../../assets/images/member-ship-logout.svg');
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+
+.logos{
+  background-image: url('../../../../assets/images/logo-humano-insigne.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  /* margin-right: -150px; */
+}
+
+.useRepon{
+  background-image: url('../../../../assets/images/default_user.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}

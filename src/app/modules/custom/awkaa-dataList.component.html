@@ -1,0 +1,191 @@
+
+<div class="mx-auto container-fluid" style=" min-width: 900px; margin-top: 100px;">
+
+  <div class="awkaa-display-header  border-bottom border-top py-0  " *ngIf="config['displayHeader'] == true ">
+
+    <nav  class=" py-2 d-flex ">
+      <div  class=" me-auto d-flex  ">
+
+        <button type="button" class="btn btn-ligth " *ngIf="config['displayPaginatorRecapHeader'] == true" >
+
+            <span *ngIf=" config['dataItemTotal']  > 0 ">
+              {{config['dataItemFirstRank']}} à {{config['dataItemLastRank']}} / {{config['dataItemTotal']}} Élément{{ ( config['dataItemTotal'] > 1 ) ? 's': ''}}
+            </span>
+            <span *ngIf=" config['dataItemTotal']  == 0 ">
+              Pas d'élément trouvé
+            </span>
+
+        </button>
+
+        <button type="button"
+
+                        [attr.data-bs-target]="'#'+config['filterTriggerTargetId']"
+                        data-bs-toggle="offcanvas"
+                        class="btn border border-ligth text-body ms-2"
+                         *ngIf=" config['displayFilterTrigger'] == true"
+                        style="height:33px;"
+        >
+          <i  class="bi bi-funnel"> </i>
+            Filtres
+        </button>
+      </div>
+      <div  class=" ms-auto d-flex">
+          <div class="dropdown  d-flex"
+            *ngIf=" config['displaySorter'] == true"
+
+            >
+            <button class="btn   dropdown-toggle border border-ligth text-body" type="button" data-bs-toggle="dropdown" aria-expanded="false"  title="Tri"  style="height:33px;">
+              <!-- <i  class="bi bi-arrow-down-up"></i>
+              <i  class="bi bi-config-left"> </i>-->
+                <i  class="bi bi-filter-right"> </i>
+
+              <span class="ps-1" >{{ ( config['sorter'] != undefined ) ? config['sorter']['name'] : ""}}</span>
+            </button>
+            <ul class="dropdown-menu border border-ligth text-body" >
+
+               <li *ngFor=" let option of config['sorters'] ; let i = index  "  style="cursor:pointer !important;" >
+                <a class="dropdown-item  text-body"  (click)="setStateSorterFromClient(option)"  style="cursor:pointer !important;">{{option.name}}</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="btn-group  border-ligth text-body p-0 ms-3  d-flex" role="group"
+
+              *ngIf=" config['displayTemplateSwitch'] == true"
+          >
+
+
+              <input type="radio" class="btn-check"  [checked]="config['templateSwitch'] ==  templateSwitchesPossible['card']['id'] " name="{{config.id}}-switch" value="{{ templateSwitchesPossible['card']['id'] }}" id="{{config.id}}-switch-card" autocomplete="off" *ngIf=" templateSwitchesPossible['card'] && hasTemplate('card') == true "  (click)="setStateTemplateSwitchFromClient(templateSwitchesPossible['card']['id'])" />
+              <label class="btn    " for="{{config.id}}-switch-card" *ngIf=" templateSwitchesPossible['card'] && hasTemplate('card') == true " title="Card">
+                <i  class="bi bi-view-list"></i>
+              </label>
+
+
+
+            <input type="radio" class="btn-check"  [checked]="config['templateSwitch'] ==  templateSwitchesPossible['list']['id'] " name="{{config.id}}-switch" value="{{ templateSwitchesPossible['list']['id'] }}" id="{{config.id}}-switch-list" autocomplete="off"   *ngIf=" templateSwitchesPossible['list'] && hasTemplate('list') == true " (click)="setStateTemplateSwitchFromClient(templateSwitchesPossible['list']['id'])" />
+            <label class="btn    " for="{{config.id}}-switch-list"   *ngIf=" templateSwitchesPossible['list'] && hasTemplate('list') == true " title="Liste">
+              <i  class="bi bi-list-task"></i>
+            </label>
+
+
+
+            <input type="radio" class="btn-check" [checked]="config['templateSwitch'] ==  templateSwitchesPossible['grid']['id'] " name="{{config.id}}-switch" value="{{ templateSwitchesPossible['grid']['id'] }}" id="{{config.id}}-switch-grid" autocomplete="off"  *ngIf=" templateSwitchesPossible['grid'] && hasTemplate('grid') == true " (click)="setStateTemplateSwitchFromClient(templateSwitchesPossible['grid']['id'])" />
+            <label class="btn  " for="{{config.id}}-switch-grid" *ngIf=" templateSwitchesPossible['grid'] && hasTemplate('grid') == true "  title="Grille">
+              <i  class="bi bi-grid"></i>
+            </label>
+
+
+
+          </div>
+
+      </div>
+
+
+    </nav>
+
+  </div>
+
+  <div class="awkaa-display-content position-relative py-1 pb-3  " style="min-height:100px;">
+
+
+    <div class="spinner-border spinner-border-xxl mx-auto my-auto  position-absolute " role="status"   [style.display]="   loading  == true ? '' : 'none'"  style="left:50%;top:50%;margin-top:-40px;">
+          <span class="visually-hidden">Chargement...</span>
+    </div>
+
+    <!-- <div class=""  *ngIf="  hasTemplate('card') == true && config['templateSwitch'] === 'card' && loading == false " >
+      <ng-container [ngTemplateOutlet]="templateCard"  ></ng-container>
+    </div>
+
+    <div class=""  *ngIf="  hasTemplate('list') == true && config['templateSwitch'] === 'list'  && loading == false" >
+      <ng-container [ngTemplateOutlet]="templateList"  ></ng-container>
+    </div>
+
+    <div class="mx-auto">
+      <div class="  awkaa-data-list-grid-items-container  "  *ngIf="  hasTemplate('grid') == true && config['templateSwitch'] === 'grid'  && loading == false" >
+        <ng-container [ngTemplateOutlet]="templateGrid"  ></ng-container>
+      </div>
+    </div> -->
+
+  </div>
+
+
+
+
+  <div class="awkaa-display-footer  border-bottom border-top   py-0 my-2   "   *ngIf="config['displayFooter'] == true ">
+
+
+    <nav  class=" py-2 d-flex  align-items-center ">
+
+        <div  class=" me-auto d-flex  ">
+        <button type="button" class="btn btn-ligth " *ngIf="config['displayPaginatorRecapHeader'] == true" >
+
+            <span *ngIf=" config['dataItemTotal']  > 0 ">
+              {{config['dataItemFirstRank']}} à {{config['dataItemLastRank']}} / {{config['dataItemTotal']}} Élément{{ ( config['dataItemTotal'] > 1 ) ? 's': ''}}
+            </span>
+            <span *ngIf=" config['dataItemTotal']  == 0 ">
+              Pas d'élément trouvé
+            </span>
+
+        </button>
+        </div>
+
+        <div  class=" ms-auto d-flex   ">
+
+          <button type="button" class="btn btn-ligth "
+          *ngIf=" config['displayPaginatorPageSizeChooser'] == true" >
+          Éléments par page :
+          </button>
+
+
+          <div class="dropdown  d-flex"
+            *ngIf=" config['displayPaginatorPageSizeChooser'] == true"
+            >
+             <button class="btn dropdown-toggle border border-ligth text-body py-0 m-1 " style="height:33px;" type="button" data-bs-toggle="dropdown" aria-expanded="false"  title="Tri" >
+               <span class="ps-1" > {{ ( config['paginatorPageSize'] != undefined ) ? config['paginatorPageSize'] : "" }} </span>
+             </button>
+             <ul class="dropdown-menu border border-primary text-body" >
+               <li *ngFor=" let option of config['paginatorPageSizeChoices'] ; let i = index  "   style="cursor:pointer !important;">
+                 <a class="dropdown-item  text-body"  (click)="setStatePaginatorPageSizeFromClient(option)"  style="cursor:pointer !important;">{{option}} éléments par page</a>
+               </li>
+             </ul>
+          </div>
+
+          <span class="ms-3"
+          *ngIf=" config['displayPaginatorPageChooser'] == true"
+
+            >
+              &nbsp;
+          </span>
+          <ul class="pagination  d-flex my-auto  "
+          *ngIf=" config['displayPaginatorPageChooser'] == true"
+
+          >
+            <li class="page-item cursor-pointer"  style="cursor:pointer !important;">
+              <a class="page-link cursor-pointer" (click)="paginatePrevious()" style="cursor:pointer !important;">
+                <i  class="bi bi-chevron-left  text-body "></i>
+              </a>
+            </li>
+            <li class="page-item cursor-pointer"  >
+
+
+            <!-- <select class=" border  text-body h-100 ps-1 pe-1 "  (change)="setStatePaginatorPageFromClient()" [(ngModel)]="config['paginatorPage']" >
+              <option *ngFor=" let option  of [].constructor(config['dataItemPageTotal'])  ; let i = index  "   style="cursor:pointer !important;" [value]="i+1"  [selected]=" config['paginatorPage'] === i+1">
+                <a class="  text-body"   style="cursor:pointer !important;">Page {{i+1}} / {{ config['dataItemPageTotal'] }} </a>
+              </option>
+            </select> -->
+
+
+            </li>
+
+            <li class="page-item cursor-pointer" style="cursor:pointer !important;">
+              <a class="page-link cursor-pointer" (click)="paginateNext()"  style="cursor:pointer !important;">
+                <i  class="bi bi-chevron-right text-body "></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+
+
+</div>

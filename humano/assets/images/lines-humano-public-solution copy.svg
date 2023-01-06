@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1132"
+   height="200"
+   viewBox="0 0 299.50833 52.916668"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   sodipodi:docname="lines-humano-public-solution.svg"
+   inkscape:export-filename="/Users/alassane.niambele/Desktop/imgs/lines-humano-public-solution.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="11px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:zoom="6.2992818"
+     inkscape:cx="583.79671"
+     inkscape:cy="189.3073"
+     inkscape:window-width="1312"
+     inkscape:window-height="847"
+     inkscape:window-x="-3"
+     inkscape:window-y="30"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="98.789041,126.84044"
+       orientation="1,0"
+       id="guide9" />
+    <sodipodi:guide
+       position="26.209337,120.1201"
+       orientation="1,0"
+       id="guide11" />
+    <sodipodi:guide
+       position="274.18999,93.238724"
+       orientation="1,0"
+       id="guide13" />
+    <sodipodi:guide
+       position="183.46536,44.180221"
+       orientation="0,-1"
+       id="guide15" />
+    <sodipodi:guide
+       position="198.92215,44.180221"
+       orientation="1,0"
+       id="guide17" />
+    <sodipodi:guide
+       position="150.53568,22.675124"
+       orientation="1,0"
+       id="guide19" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 26.209337,8.736446 150.53568,52.954737"
+       id="path54"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 150.53568,52.954737 98.789039,8.7364458"
+       id="path191"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 150.53568,52.954737 198.92215,8.7364458"
+       id="path226"
+       sodipodi:nodetypes="cc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 4">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 150.53568,52.954737 274.18999,8.736446"
+       id="path228"
+       inkscape:export-filename="/Users/alassane.niambele/Desktop/imgs/path228.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
